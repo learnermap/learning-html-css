@@ -1,4 +1,4 @@
-## Notas 
+# Learning HTML/CSS
 
 1. Criação de arquivo html e uso das tags: h1, p, strong, e em;
 2. Definição da estrutura de uma página utilizando tags 
