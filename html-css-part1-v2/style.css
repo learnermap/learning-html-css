@@ -1,0 +1,43 @@
+/*
+Link to colors palette
+
+https://coolors.co/dcdcdd-c5c3c6-46494c-4c5c68-1985a1
+*/
+
+body {
+  background-color: #1985a1;
+  color: #DCDCDD;
+}
+
+.page-title {
+  text-align: center;  
+}
+
+h2 {
+  color: #46494C;
+}
+
+strong {
+  color: #46494C;
+}
+
+p {
+  color: #DCDCDD;
+}
+
+.page-intro {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+  text-align: justify;
+}
+
+.page-profile {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+}
+
+.page-social {
+  text-align: center;
+}
