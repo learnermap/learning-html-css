@@ -7,32 +7,131 @@
     <link rel="icon" href="data:,">
     <title>Document</title>
     <style>
-        header {
-            background-color: green;
+        /* Importando as fontes */
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Roboto:wght@400;700&display=swap');
+        /* Aplicando um reset básico */
+        html {
+            box-sizing: border-box;
+        }
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ul,
+        ol,
+        li,
+        p,
+        pre,
+        blockquote,
+        figure,
+        hr {
+            margin: 0;
+            padding: 0;
+        }  
+        /* Aplicando 100% do viewport no body */
+        body {
+            height: 100vh;
+        }
+        /* Aplicando padrão de nomenclatura nas classes - BEM */
+        body {
+            background-color: #1985A1;
+            color: #DCDCDD;
+        }
+        .cabecalho {
+            padding: 20px;            
         }
 
-        main {
-            background-color: blue;
+        .cabecalho__titulo {
+            font-family: 'Roboto', sans-serif;            
+            font-weight: 700;
         }
 
-        footer {
-            background-color: yellow;
+        .cabecalho__subtitulo {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .principal {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 5% 10%;
+        }
+
+        .principal__secao {
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .principal__img {
+            border-radius: 10px;
+        }
+
+        .principal__secao__subtitulo {
+            font-family: 'Roboto', sans-serif;
+            font-size: 30px;
+        }
+
+        .principal__secao__subtitulo-destaque {
+            color: #46494C;
+        }
+
+        .principal__secao__paragrafo {
+            font-size: 18px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .principal__secao__buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .principal__secao__buttons__link {
+            background-color: #4C5C68;
+            width: 180px;
+            border-radius: 5px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+            color: #DCDCDD;
+        }
+
+        .rodape {
+            color: #C5C3C6;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            text-align: center;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
     <!-- Define a corpo de um documento html -->
-    <header>
-        <h1>Hello HTML</h1>
-        <h2>My first page</h2>
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Hello HTML</h1>
+        <h2 class="cabecalho__subtitulo">My first page</h2>
     </header>
-    <main>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptatum quia enim adipisci odit vero ex perspiciatis ipsam, cumque modi id dolor doloremque cupiditate. Quae nostrum inventore fugit repellat id!
-        </p>
-        <img src="https://placeholder.com/250x250" alt="Placeholder">
+    <main class="principal">
+        <section class="principal__secao">
+            <h2 class="principal__secao__subtitulo" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. <strong class="principal__secao__subtitulo-destaque">Possimus atque illum praesentium quod qui!</strong></h2>
+            <p class="principal__secao__paragrafo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptatum quia enim adipisci odit vero ex perspiciatis ipsam, cumque modi id dolor doloremque cupiditate. Quae nostrum inventore fugit repellat id!
+            </p>
+            <div class="principal__secao__buttons">
+                <a class="principal__secao__buttons__link" href="#">Link 1</a>
+                <a class="principal__secao__buttons__link" href="#">Link 2</a>
+            </div>
+        </section>
+        <img class="principal__img" src="https://placeholder.com/250x250" alt="Placeholder">
     </main>
-    <footer>
+    <footer class="rodape">
         &copy; 2023 Direitos Não Reservados
     </footer>
 </body>
