@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Test</title>
+    <style>
+        /* reset */
+        html {
+            box-sizing: border-box;
+        }
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ul,
+        ol,
+        li,
+        p,
+        pre,
+        blockquote,
+        figure,
+        hr {
+            margin: 0;
+            padding: 0;
+        }        
+        div {
+            border: 1px solid black;
+        }
+
+        .div4 {
+            margin-top: 50px;
+            display: flex;
+        }
+
+        .div7 {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+        }  
+        
+        .div10 {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column-reverse;
+        }  
+        
+        .div13 {
+            margin-top: 50px;
+            display: flex;            
+        }
+
+        .div16 {
+            margin-top: 50px;
+            display: flex;   
+            flex-direction: row;
+            flex-flow: wrap;         
+        }   
+        
+        .div20 {
+            margin-bottom: 50px;
+            display: flex;   
+            flex-direction: row;            
+        }
+        .div21 {
+            margin-bottom: 50px;
+            display: flex;   
+            flex-direction: row;
+            justify-content: space-between;
+        }     
+        .div22 {
+            margin-bottom: 50px;
+            display: flex;   
+            flex-direction: row;
+            justify-content: flex-start;
+        }   
+        .div23 {
+            margin-bottom: 50px;
+            display: flex;   
+            flex-direction: row;
+            justify-content: flex-end;
+        }  
+        .div24 {
+            margin-bottom: 50px;
+            display: flex;   
+            flex-direction: row;
+            justify-content: space-around;
+        } 
+        .div25 {
+            margin-bottom: 50px;
+            display: flex;   
+            flex-direction: row;
+            justify-content: center;
+        } 
+        .div26 {
+            margin-bottom: 50px;
+            display: flex;   
+            flex-direction: row;
+            justify-content: space-evenly;
+        }   
+        .div27 {
+            margin-bottom: 50px;
+            display: flex;   
+            justify-content: space-evenly;
+        }  
+        
+        .div28 {
+            margin-bottom: 50px;
+            display: flex;   
+            justify-content: space-evenly;
+            align-items: flex-end;
+        }   
+        
+        .div29 {
+            margin-bottom: 50px;
+            display: flex;   
+            justify-content: space-evenly;
+            align-items: center;
+        }   
+        
+        .div30 {
+            margin-bottom: 50px;
+            display: flex;   
+            justify-content: space-evenly;
+            align-items: stretch;
+        }   
+        
+        .div31 {
+            margin-bottom: 50px;
+            display: flex;   
+            justify-content: space-evenly;
+            align-items: baseline;
+        }  
+        
+        .div32 {
+            margin-bottom: 50px;
+            display: flex;   
+            justify-content: space-evenly;
+            align-items: flex-start;
+            flex-flow: wrap;  
+            align-content: space-around;
+            height: 100vh;
+        }   
+        
+        .div33 {
+            margin-bottom: 50px;
+            display: flex;   
+            justify-content: space-evenly;
+            align-items: flex-start;
+            flex-flow: wrap;  
+            align-content: space-around;
+            height: 100vh;
+        }       
+        
+        .div34 {
+            margin-bottom: 50px;
+            display: flex;   
+            justify-content: space-evenly;
+            align-items: flex-start;
+            flex-flow: wrap;  
+            align-content: space-around;
+            height: 100vh;
+        }          
+        
+        .img1 {
+            border: 3px solid black;
+        }
+        .img2 {
+            border: 3px solid black;
+        }
+        .img3 {
+            border: 3px solid black;
+        }
+        .img4 {
+            border: 3px solid black;
+        }
+        .img5  {
+            order: 3;
+        }
+        .img6 {
+            order: 2;
+        }
+        .img7 {
+            order: 1;
+        } 
+        
+        .img8 {
+            flex-grow: 1;
+        }     
+        .img9 {
+            flex-grow: 3;
+        }     
+        .img10 {
+            flex-grow: 2;
+            /* flex-shrink: 3; */
+        }
+        img {
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="div34">
+        <img class="img8" src="https://via.placeholder.com/200/fd0101/?text=1" alt="">
+        <img class="img9" src="https://via.placeholder.com/200/ae801c/?text=2" alt="">
+        <img class="img10" src="https://via.placeholder.com/200/123adf/?text=3" alt="">
+    </div>
+
+
+    <div class="div33">
+        <img class="img5" src="https://via.placeholder.com/200/808080/?text=1" alt="">
+        <img class="img6" src="https://via.placeholder.com/200/808080/?text=2" alt="">
+        <img class="img7" src="https://via.placeholder.com/200/808080/?text=3" alt="">
+    </div>
+
+    <div class="div32">
+        <img class="img2" src="https://placeholder.com/200x200" alt="">
+        <img class="img3" src="https://placeholder.com/200x300" alt="">
+        <img class="img4" src="https://placeholder.com/200x150" alt="">
+        <img class="img4" src="https://placeholder.com/200x150" alt="">
+        <img class="img4" src="https://placeholder.com/200x150" alt="">
+        <img class="img2" src="https://placeholder.com/200x200" alt="">
+        <img class="img3" src="https://placeholder.com/200x300" alt="">
+        <img class="img4" src="https://placeholder.com/200x150" alt="">
+        <img class="img4" src="https://placeholder.com/200x150" alt="">
+        <img class="img4" src="https://placeholder.com/200x150" alt="">
+        <img class="img2" src="https://placeholder.com/200x200" alt="">
+        <img class="img3" src="https://placeholder.com/200x300" alt="">
+        <img class="img4" src="https://placeholder.com/200x150" alt="">
+        <img class="img4" src="https://placeholder.com/200x150" alt="">
+        <img class="img4" src="https://placeholder.com/200x150" alt="">
+
+    </div>
+
+
+    <div class="div31">
+        <img class="img2" src="https://placeholder.com/200x200" alt="">
+        <img class="img3" src="https://placeholder.com/200x300" alt="">
+        <img class="img4" src="https://placeholder.com/200x150" alt="">
+    </div>
+    
+    <div class="div30">
+        <img class="img2" src="https://placeholder.com/200x200" alt="">
+        <img class="img3" src="https://placeholder.com/200x300" alt="">
+        <img class="img4" src="https://placeholder.com/200x150" alt="">
+    </div>
+    
+    <div class="div29">
+        <img class="img2" src="https://placeholder.com/200x200" alt="">
+        <img class="img3" src="https://placeholder.com/200x300" alt="">
+        <img class="img4" src="https://placeholder.com/200x150" alt="">
+    </div>
+    
+    <div class="div28">
+        <img class="img2" src="https://placeholder.com/200x200" alt="">
+        <img class="img3" src="https://placeholder.com/200x300" alt="">
+        <img class="img4" src="https://placeholder.com/200x150" alt="">
+    </div>    
+
+    <div class="div27">
+        <img class="img2" src="https://placeholder.com/200x200" alt="">
+        <img class="img3" src="https://placeholder.com/200x300" alt="">
+        <img class="img4" src="https://placeholder.com/200x150" alt="">
+    </div>
+
+    <div class="div26">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+    </div>
+
+    <div class="div25">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+    </div>
+
+
+    <div class="div24">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+    </div>
+
+    <div class="div23">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+    </div>
+
+    <div class="div22">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+    </div>
+
+    <div class="div21">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+    </div>    
+
+    <div class="div20">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+        <img class="img1" src="https://placeholder.com/200" alt="">
+    </div>    
+
+    <div class="div1">
+        <div class="div2">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum minima cupiditate laboriosam enim sit provident accusantium id expedita harum delectus. Animi alias facere reprehenderit quisquam eaque ratione nostrum accusamus eius.</p>
+        </div>
+        <div class="div3">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum minima cupiditate laboriosam enim sit provident accusantium id expedita harum delectus. Animi alias facere reprehenderit quisquam eaque ratione nostrum accusamus eius.</p>
+        </div>
+    </div>
+
+    <!-- Container será flex alinhando por padrão elementos um ao lado do outro -->
+    <div class="div4">
+        <div class="div5">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum minima cupiditate laboriosam enim sit provident accusantium id expedita harum delectus. Animi alias facere reprehenderit quisquam eaque ratione nostrum accusamus eius.</p>
+        </div>
+        <div class="div6">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum minima cupiditate laboriosam enim sit provident accusantium id expedita harum delectus. Animi alias facere reprehenderit quisquam eaque ratione nostrum accusamus eius.</p>
+        </div>
+    </div>    
+
+    <!-- Container será flex alinhando elementos um em baixo do outro -->
+    <div class="div7">
+        <div class="div8">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum minima cupiditate laboriosam enim sit provident accusantium id expedita harum delectus. Animi alias facere reprehenderit quisquam eaque ratione nostrum accusamus eius.</p>
+        </div>
+        <div class="div9">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum minima cupiditate laboriosam enim sit provident accusantium id expedita harum delectus. Animi alias facere reprehenderit quisquam eaque ratione nostrum accusamus eius.</p>
+        </div>
+    </div>   
+    
+    <!-- Container será flex alinhando elementos um em baixo do outro -->
+    <div class="div10">
+        <div class="div11">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum minima cupiditate laboriosam enim sit provident accusantium id expedita harum delectus. Animi alias facere reprehenderit quisquam eaque ratione nostrum accusamus eius.</p>
+        </div>
+        <div class="div12">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>
+    </div>   
+    
+    <!-- Testando wrap -->
+    <div class="div13">
+        <div class="div14">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum minima cupiditate laboriosam enim sit provident accusantium id expedita harum delectus. Animi alias facere reprehenderit quisquam eaque ratione nostrum accusamus eius.</p>
+        </div>
+        <div class="div15">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>
+        <div class="div15">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>
+        <div class="div15">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>
+        <div class="div15">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>
+        <div class="div15">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>       
+        <div class="div14">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum minima cupiditate laboriosam enim sit provident accusantium id expedita harum delectus. Animi alias facere reprehenderit quisquam eaque ratione nostrum accusamus eius.</p>
+        </div>
+        <div class="div15">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>
+        <div class="div15">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>
+        <div class="div15">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>
+        <div class="div15">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>
+        <div class="div15">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>                                   
+    </div>
+    
+    <div class="div16">
+        <div class="div14">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum minima cupiditate laboriosam enim sit provident accusantium id expedita harum delectus. Animi alias facere reprehenderit quisquam eaque ratione nostrum accusamus eius.</p>
+        </div>
+        <div class="div15">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>
+        <div class="div15">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>
+        <div class="div15">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>
+        <div class="div15">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>
+        <div class="div15">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>       
+        <div class="div14">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum minima cupiditate laboriosam enim sit provident accusantium id expedita harum delectus. Animi alias facere reprehenderit quisquam eaque ratione nostrum accusamus eius.</p>
+        </div>
+        <div class="div15">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>
+        <div class="div15">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>
+        <div class="div15">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>
+        <div class="div15">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>
+        <div class="div15">
+            <p>Similique cupiditate quae voluptates, in tempore obcaecati doloremque, consectetur ab rerum illum corporis sequi aliquid?.</p>
+        </div>                                   
+    </div>
+</body>
+</html>
