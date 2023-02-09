@@ -63,6 +63,12 @@ abaixo. Em ordem, estão organizados por quantidade de documentação para tutor
   - Criação de links de navegação bem como as páginas destino.
   - [Utilização de variáveis no css](https://www.freecodecamp.org/news/learn-css-variables-in-5-minutes-80cf63b4025d/) para representar cores, evitando a duplicação de código.
 
+- **9 de fevereiro de 2023**
+  - [Unidades de medida](https://www.freecodecamp.org/news/css-unit-guide/): absolutas e relativas
+  - Adaptação de elementos à proporções distintas de telas
+  - medias queries e responsavidade
+
+
 ## Meus códigos
 
 O repositório do projeto [Aprendendo HTML/CSS](https://github.com/learnermap/learning-html-css).
