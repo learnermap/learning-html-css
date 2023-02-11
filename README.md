@@ -68,6 +68,11 @@ abaixo. Em ordem, estão organizados por quantidade de documentação para tutor
   - Adaptação de elementos à proporções distintas de telas
   - medias queries e responsavidade
 
+- **10 de fevereiro de 2023**
+  - Revisando os conceitos aprendidos até aqui, criando um novo projeto.
+  - Variáveis css, imagens de contexto e de fundo
+  - grid layout: [link1](https://www.freecodecamp.org/news/css-grid-tutorial-with-cheatsheet/), [link2](https://www.freecodecamp.org/news/how-to-use-css-grid-layout/), [link3](https://www.freecodecamp.org/news/learn-css-grid-by-building-5-layouts/), [liink4](https://www.alura.com.br/artigos/criando-layouts-com-css-grid-layout); 
+  - Configuração de fontes e customização de botões.
 
 ## Meus códigos
 
