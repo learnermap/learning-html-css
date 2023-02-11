@@ -74,6 +74,15 @@ abaixo. Em ordem, estão organizados por quantidade de documentação para tutor
   - grid layout: [link1](https://www.freecodecamp.org/news/css-grid-tutorial-with-cheatsheet/), [link2](https://www.freecodecamp.org/news/how-to-use-css-grid-layout/), [link3](https://www.freecodecamp.org/news/learn-css-grid-by-building-5-layouts/), [liink4](https://www.alura.com.br/artigos/criando-layouts-com-css-grid-layout); 
   - Configuração de fontes e customização de botões.
 
+- **11 de fevereiro de 2023**
+  - Elementos inline-block
+    - [Pare de chutar e aprenda como funciona o display: inline-block](https://medium.com/collabcode/pare-de-chutar-e-aprenda-como-funciona-o-display-inline-block-4e6cba2f19d4)
+    - [The CSS Display Property – Display None, Display Table, Inline Block and More](https://www.freecodecamp.org/news/the-css-display-property-display-none-display-table-inline-block-and-more/)
+    - [Inline Elements and Block Elements in HTML - Explained](https://www.freecodecamp.org/news/inline-elements-and-block-elements-in-html-explained/)
+  - Flexbox e Pseudo-classes
+
+
+
 ## Meus códigos
 
 O repositório do projeto [Aprendendo HTML/CSS](https://github.com/learnermap/learning-html-css).
