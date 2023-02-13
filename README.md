@@ -81,6 +81,14 @@ abaixo. Em ordem, estão organizados por quantidade de documentação para tutor
     - [Inline Elements and Block Elements in HTML - Explained](https://www.freecodecamp.org/news/inline-elements-and-block-elements-in-html-explained/)
   - Flexbox e Pseudo-classes
 
+- **12 de fevereiro de 2023**
+  - [Carousel](https://www.freecodecamp.org/news/how-to-design-and-build-a-carousel-feature-in-vuejs-125f690a3a9e/)
+
+- **13 de fevereiro de 2023**
+  - [Medias queries](https://www.alura.com.br/artigos/flexibilidade-em-paginas-para-dispositivos-moveis-com-media-queries)
+  - Ocultar elementos quando a resolução mudar
+  - Em páginas web com várias seções, recomenda-se criar um arquivo css para cada seção, importando todos no arquivo css principal, utilizando `@import...`
+  - [Pseudoclasses](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes)
 
 
 ## Meus códigos

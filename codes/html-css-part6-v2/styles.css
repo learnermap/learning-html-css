@@ -1,0 +1,12 @@
+:root {
+  --cor-de-fundo: #FFF;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
